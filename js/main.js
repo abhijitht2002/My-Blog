@@ -4,14 +4,14 @@ const container = document.getElementById("blog-container")
 
 // console.log(blogs)
 
-blogs.forEach((blog) => {
+blogs.forEach((blog, i) => {
   const card = document.createElement("article")
   card.className = "blog-card";
   card.innerHTML = `${blog.image ? `<img src="${blog.image}" alt="${blog.title}">` : ""}
         <div class="blog-content">
             <h3>${blog.title}</h3>
             <p>Posted on ${blog.date}</p>
-            <span><a href="#" class="read-more" data-index="${blog.id}" data-bs-toggle="modal" data-bs-target="#blogModal">Read more →</a></span>
+            <span><a href="#" class="read-more" data-index="${i}" data-bs-toggle="modal" data-bs-target="#blogModal">Read more →</a></span>
         </div>`
   container.appendChild(card);
 });
@@ -29,6 +29,7 @@ document.querySelectorAll('.read-more').forEach(btn => {
         event.preventDefault()
         
         const index = btn.dataset.index;
+        console.log(index)
         const blog = blogs[index];
 
         blogModalLabel.textContent = blog.title
