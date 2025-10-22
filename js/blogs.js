@@ -16,7 +16,7 @@ export const blogs = [
     },
     {
         id: 3,
-        image: 'https://lh3.googleusercontent.com/ceVQHDLE43pyhXbYly-W6cKH6KI3W1TATwrGgZ0ERKIThY2OT1lN0DlVMf7uOfIlukO9_QMWJajl8Q2dxma5ZzSMm078MJt46m6ldgajUV2HFRMofdLpZ87YRkyveKcEb7kATDUq',
+        image: 'https://miro.medium.com/v2/resize:fit:1400/0*PCOIGb73dnuCVXN1.png',
         title: "A Beginner’s Guide to Journaling",
         desc: "Writing daily can help clarify thoughts, set intentions, and track personal growth. This beginner-friendly guide explains how to start journaling, the types of journals, and tips for consistency.",
         date: "09 May 2025"
